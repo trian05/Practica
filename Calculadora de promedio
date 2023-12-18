@@ -1,0 +1,19 @@
+print("Mi promedio Universitario")
+
+nombre = input("Nombre completo: ")
+materia = 5
+
+contador = 1
+sumatoria = 0
+
+while contador <= materia:
+    nombre_materia = input("Ingrese el nombre de la (" + str(contador) + ") materia: ")
+    calificacion = float(input("Calificación obtenida en " + str(nombre_materia) + ": "))
+
+    sumatoria = sumatoria + calificacion
+    contador = contador + 1
+
+promedio = sumatoria / materia
+print("\n")
+print("RESULTADOS")
+print(f'Hola, {nombre} tienes un promedio de {promedio} en el 5to semestre.')
